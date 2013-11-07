@@ -1,0 +1,30 @@
+﻿<header>
+    <div class="content-wrapper">
+        <div class="float-left">
+            <p class="site-title">
+                <a href="~/">Diesel Web API</a></p>
+        </div>
+    </div>
+</header>
+<div id="body">
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>Diesel Web API</h1>
+                <h2>Usage.</h2>
+            </hgroup>
+            <p>
+                Users
+            </p>
+            <p>
+            GET http://dotnetdev:8093/api/Users <br />
+            GET http://dotnetdev:8093/api/Users/:id (i.e. http://dotnetdev:8093/api/Users/3) <br />
+            POST curl -H "Content-Type:application/json" -d "{\"UserName\":\"PlayerN\",\"Password\":\"Password\",\"MaxActiveGames\":\"1\"}" -X POST http://dotnetdev:8093/api/Users <br />
+            PUT curl -H "Content-Type:application/json" -d "{\"UserName\":"NewUserNameFor1\"}" -X PUT http://dotnetdev:8093/api/Users/1<br />
+            DELETE curl -X DELETE http://dotnetdev:8093/api/Users/1 <br />
+            </p>
+
+            <p>Other REST entities ActiveGames | Army | BoardStates | ChallengeMatches | GameStates | RandomMatchQueue</p>
+        </div>
+    </section>
+</div>
